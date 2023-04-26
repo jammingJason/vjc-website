@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Intro from './Intro';
+import NavBar from './NavBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Northwestern from './Northwestern';
+import Missing from './Missing';
+import Transcript from './Transcript';
+import DiplomaVerify from './DiplomaVerify';
+import SouthFlorida from './SouthFlorida';
 
 function App() {
+  const typeName = (evt) => {
+    alert(evt);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter forceRefresh={true}>
+        <NavBar />
+        <header className="App-header">
+          <Routes>
+            <Route exact="true" path="/" element={<Intro />} />
+            <Route
+              exact="true"
+              path="/education/southFlorida"
+              element={<SouthFlorida />}
+            />
+            <Route
+              exact="true"
+              path="/education/northwestern"
+              element={<Northwestern />}
+            />
+            <Route
+              exact="true"
+              path="/education/northwestern/transcript"
+              element={<Transcript />}
+            />
+            <Route
+              exact="true"
+              path="/education/northwestern/diplomaVerify"
+              element={<DiplomaVerify />}
+            />
+            <Route path="*" element={<Missing />} />
+          </Routes>
+        </header>
+      </BrowserRouter>
     </div>
   );
 }

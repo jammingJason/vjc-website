@@ -1,4 +1,17 @@
+@font-face {
+  font-family: 'Custom VJC';
+  src: url(font/PoiretOne-Regular.ttf) format('ttf');
+ }
+
+a {
+  color: yellow;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 .App {
+  font-family: 'Custom VJC';
   text-align: center;
 }
 
@@ -19,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
