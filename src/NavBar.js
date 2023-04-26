@@ -93,10 +93,7 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a
-                      className="dropdown-item"
-                      href="/education/northwestern/"
-                    >
+                    <a className="dropdown-item" href="/education/northwestern">
                       Northwestern University
                     </a>
                   </li>

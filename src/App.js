@@ -10,10 +10,6 @@ import DiplomaVerify from './DiplomaVerify';
 import SouthFlorida from './SouthFlorida';
 
 function App() {
-  const typeName = (evt) => {
-    alert(evt);
-  };
-
   return (
     <div className="App">
       <BrowserRouter forceRefresh={true}>
