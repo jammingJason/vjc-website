@@ -105,6 +105,11 @@ const NavBar = () => {
                 </ul>
               </li>
               <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="/aboutMe">
+                  About Me
+                </a>
+              </li>
+              <li className="nav-item">
                 <a
                   className="nav-link"
                   href="https://www.linkedin.com/in/vanjasoncrews"

@@ -8,6 +8,7 @@ import Missing from './Missing';
 import Transcript from './Transcript';
 import DiplomaVerify from './DiplomaVerify';
 import SouthFlorida from './SouthFlorida';
+import AboutMe from './AboutMe';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <header className="App-header">
           <Routes>
             <Route exact="true" path="/" element={<Intro />} />
+            <Route exact="true" path="/aboutMe" element={<AboutMe />} />
             <Route
               exact="true"
               path="/education/southFlorida"
