@@ -48,10 +48,7 @@ const NavBar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a
-                      className="dropdown-item"
-                      href="http://vanjason.com/jeopardy/"
-                    >
+                    <a className="dropdown-item" href="jeopardy/index.html">
                       Jeopardy
                     </a>
                   </li>
